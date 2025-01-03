@@ -1,0 +1,27 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    h4{
+        margin: 0px;
+    }
+  }
+.footer-container {
+    display: flex; 
+    padding: 50px 100px;
+    gap: 100px;
+    background-color: #f1f1f1;
+  }
+
+  @media (max-width: 900px) {
+    .footer-container { 
+        padding: 50px; 
+      }
+  }
+
+  @media (max-width: 400px) {
+    .footer-container {
+       flex-wrap: wrap;
+        padding: 36px;
+        gap: 50px;
+      }
+  }
