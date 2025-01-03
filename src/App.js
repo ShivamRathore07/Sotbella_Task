@@ -63,7 +63,12 @@ function App() {
               </p>
               <div className={style["overlay-btn-container"]}>
                 <button className={style["overlay-btn"]}>Learn More</button>
-                <button className={style["overlay-btn"]} onClick={handleVideoClick}>Play / Pause</button>
+                <button
+                  className={style["overlay-btn"]}
+                  onClick={handleVideoClick}
+                >
+                  Play / Pause
+                </button>
               </div>
             </div>
           </div>
@@ -163,48 +168,50 @@ function App() {
             </div>
             <img src={Brand} alt="Brand" className={style["VisionMision"]} />
           </div>
-          <div className={style["vision-result-container"]}>
-            <img
-              src={VisionResult}
-              alt="VisionResult"
-              className={style["vision-result-img"]}
-            />
-            <div>
-              <div className={style["vision-result-title"]}>
-                Where Your Vision Meets Results
-              </div>
-              <div className={style["tech-pack-container"]}>
-                <div className={style["tech-pack"]}>
-                  <div className={style["tech-pack-title"]}>500+</div>
-                  <div className={style["tech-pack-subTitle"]}>
-                    Tech Packs Delivered
-                  </div>
-                </div>
-                <div className={style["tech-pack"]}>
-                  <div className={style["tech-pack-title"]}>20K+</div>
-                  <div className={style["tech-pack-subTitle"]}>
-                    Products Manufactured
-                  </div>
-                </div>
-                <div className={style["tech-pack"]}>
-                  <div className={style["tech-pack-title"]}>100+</div>
-                  <div className={style["tech-pack-subTitle"]}>
-                    Brands Launched
-                  </div>
-                </div>
-                <div className={style["tech-pack"]}>
-                  <div className={style["tech-pack-title"]}>100%</div>
-                  <div className={style["tech-pack-subTitle"]}>
-                    Satisfaction Rate
-                  </div>
-                </div>
-              </div>
-              <hr />
+          <div className={style["center"]}>
+            <div className={style["vision-result-container"]}>
               <img
-                src={ResultIcon}
-                alt="ResultIcon"
-                style={{ margin: "10px 0px", width: "100%" }}
+                src={VisionResult}
+                alt="VisionResult"
+                className={style["vision-result-img"]}
               />
+              <div>
+                <div className={style["vision-result-title"]}>
+                  Where Your Vision Meets Results
+                </div>
+                <div className={style["tech-pack-container"]}>
+                  <div className={style["tech-pack"]}>
+                    <div className={style["tech-pack-title"]}>500+</div>
+                    <div className={style["tech-pack-subTitle"]}>
+                      Tech Packs Delivered
+                    </div>
+                  </div>
+                  <div className={style["tech-pack"]}>
+                    <div className={style["tech-pack-title"]}>20K+</div>
+                    <div className={style["tech-pack-subTitle"]}>
+                      Products Manufactured
+                    </div>
+                  </div>
+                  <div className={style["tech-pack"]}>
+                    <div className={style["tech-pack-title"]}>100+</div>
+                    <div className={style["tech-pack-subTitle"]}>
+                      Brands Launched
+                    </div>
+                  </div>
+                  <div className={style["tech-pack"]}>
+                    <div className={style["tech-pack-title"]}>100%</div>
+                    <div className={style["tech-pack-subTitle"]}>
+                      Satisfaction Rate
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <img
+                  src={ResultIcon}
+                  alt="ResultIcon"
+                  style={{ margin: "10px 0px", width: "100%" }}
+                />
+              </div>
             </div>
           </div>
 
@@ -299,20 +306,26 @@ function App() {
                 <button>Custom Design</button>
               </div>
             </div>
-            <div
-              className={style["vision-result-container"]}
-              style={{ margin: "60px 0px 30px" }}
-            >
-              <img src={OfferImg} alt="OfferImg" className={style["OfferImg"]} />
-              <div>
-                <p className={style["offer-title"]}>
-                  We start by working closely with your brand to understand your
-                  unique vision, style, and goals. Our design team transforms
-                  these ideas into tangible concepts and designs.
-                </p>
-                <p className={style["learn-more"]}>
-                  Learn More <ArrowIcon />
-                </p>
+            <div className={style["center"]}>
+              <div
+                className={style["vision-result-container"]}
+                style={{ margin: "60px 0px 30px" }}
+              >
+                <img
+                  src={OfferImg}
+                  alt="OfferImg"
+                  className={style["OfferImg"]}
+                />
+                <div>
+                  <p className={style["offer-title"]}>
+                    We start by working closely with your brand to understand
+                    your unique vision, style, and goals. Our design team
+                    transforms these ideas into tangible concepts and designs.
+                  </p>
+                  <p className={style["learn-more"]}>
+                    Learn More <ArrowIcon />
+                  </p>
+                </div>
               </div>
             </div>
             <div className={style["overlay-btn-container"]}>
@@ -337,10 +350,12 @@ function App() {
                 <button>Denims</button>
               </div>
             </div>
-            <div className={style["dresses-container"]}>
-              <img src={DressesImg1} alt="DressesImg1" />
-              <img src={DressesImg2} alt="DressesImg2" />
-              <img src={DressesImg3} alt="DressesImg3" />
+            <div className={style["center"]}>
+              <div className={style["dresses-container"]}>
+                <img src={DressesImg1} alt="DressesImg1" />
+                <img src={DressesImg2} alt="DressesImg2" />
+                <img src={DressesImg3} alt="DressesImg3" />
+              </div>
             </div>
             <div className={style["overlay-btn-container"]}>
               <button className={style["header-btn"]}>View More</button>
@@ -348,7 +363,7 @@ function App() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
